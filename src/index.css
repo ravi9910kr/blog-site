@@ -86,10 +86,10 @@ a {
   border-radius: 6px;
 }
 .search > button {
-  background-color: red;
-  padding: .35rem .5rem;
-  border-radius: 100px;
-  color: #4f5050;
+  background-color: #747474;
+  padding: .5rem .75rem;
+  border-radius: 10px;
+  color: white;
   font-size: 1rem;
   border: none;
 }
