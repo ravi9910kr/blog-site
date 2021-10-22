@@ -4,7 +4,12 @@ const fs = require("fs");
 const PORT = process.env.PORT || 4200;
 
 const server = http.createServer((req, res)=>{
-  console.log(req.url);
+  if(req.url === '/favicon.ico'){
+    fs.readFile("./public/favicon.ico", (err, content)=>{
+      if(err) throw err;
+      res.end(content);
+    });
+  }
   if(req.url === '/'){
     fs.readFile("./public/index.html", (err, content)=>{
       if(err) throw err;
