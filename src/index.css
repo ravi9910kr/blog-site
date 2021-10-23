@@ -197,9 +197,19 @@ a {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   height: 350px;
   box-shadow: 0 0 5px 0 #666666cc;
   background-color: #202a42;
+}
+.footer > div  li{
+  list-style: none;
+}
+.footer > div{
+  width: 30%;
+  height: 50%;
+  color: rgb(228, 226, 211);
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -274,5 +284,8 @@ a {
   }
   .footer{
     flex-direction: column;
+  }
+  .footer > div{
+    margin: auto;
   }
 }
