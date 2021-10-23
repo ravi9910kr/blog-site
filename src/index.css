@@ -145,14 +145,18 @@ a {
   height: 400px;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
   justify-content: space-between;
   box-shadow: 0 0 5px 0 #666666cc;
   margin: 10px 0;
 }
 .topic-cards:hover{
   position: relative;
-  width: 410px;
+  width: 310px;
+  border-radius: 15px;
   background-position: center center;
+  transition: .6s;
 }
 #tech{
   background-image: url(./images/card-tech.jpg);
@@ -173,9 +177,11 @@ a {
 .topic-cards>.topic-name{
   font-size: 1.5;
   background-color: rgba(255, 255, 255, 0.788);
+  padding: .25rem .5rem;
   color: rgb(92, 80, 255);
 }
 .topic-cards>.text{
+  padding: .25rem .5rem;
   font-size: 1.125rem;
   background-color: rgba(255, 255, 255, 0.63);
   color: #202a42;
@@ -186,6 +192,7 @@ a {
   max-width: 1080px;
   width: 80%;
   margin: 0 auto;
+
   height: 350px;
   box-shadow: 0 0 5px 0 #666666cc;
   background-color: #202a42;
