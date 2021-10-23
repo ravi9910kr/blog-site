@@ -22,6 +22,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: cornflowerblue;
+  z-index: 10;
   box-shadow: 0 2px 5px 0px #666666cc;
 }
 .btn {
@@ -54,6 +55,7 @@ a {
 .nav-bar {
   min-width: 50%;
   display: flex;
+  z-index: inherit;
 }
 .nav-bar > div {
   display: none;
@@ -117,6 +119,7 @@ a {
 }
 .hero {
   width: 100%;
+  z-index: 1;
   /* border: 1px solid red; */
   background-image: url(./images/food-1.jpg);
   background-size: cover;
@@ -192,7 +195,8 @@ a {
   max-width: 1080px;
   width: 80%;
   margin: 0 auto;
-
+  display: flex;
+  flex-direction: row;
   height: 350px;
   box-shadow: 0 0 5px 0 #666666cc;
   background-color: #202a42;
@@ -267,5 +271,8 @@ a {
   }
   ul.hide {
     display: none;
+  }
+  .footer{
+    flex-direction: column;
   }
 }
