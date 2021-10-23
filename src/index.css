@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: none !important ;
   box-sizing: border-box;
   /* overflow: hidden; */
 }
@@ -128,8 +128,8 @@ a {
   filter: blur(2px);
   background-position: center center;
 }
-.hero::after{
-  content: '';
+.hero::after {
+  content: "";
   width: 100%;
   height: 100%;
   display: flex;
@@ -141,7 +141,6 @@ a {
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
-
 }
 .topic-cards {
   width: 300px;
@@ -153,38 +152,40 @@ a {
   justify-content: space-between;
   box-shadow: 0 0 5px 0 #666666cc;
   margin: 10px 0;
+  padding: 20px;
+  transition: 0.6s;
 }
-.topic-cards:hover{
+.topic-cards:hover {
   position: relative;
   width: 310px;
+  height: 410px;
   border-radius: 15px;
   background-position: center center;
-  transition: .6s;
 }
-#tech{
+#tech {
   background-image: url(./images/card-tech.jpg);
   background-size: cover;
 }
-#fitness{
+#fitness {
   background-image: url(./images/card-fitness.jpg);
   background-size: cover;
 }
-#food{
+#food {
   background-image: url(./images/card-food.jpg);
   background-size: cover;
 }
-#travel{
+#travel {
   background-image: url(./images/card-travel.jpg);
   background-size: cover;
 }
-.topic-cards>.topic-name{
+.topic-cards > .topic-name {
   font-size: 1.5;
   background-color: rgba(255, 255, 255, 0.788);
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   color: rgb(92, 80, 255);
 }
-.topic-cards>.text{
-  padding: .25rem .5rem;
+.topic-cards > .text {
+  padding: 0.25rem 0.5rem;
   font-size: 1.125rem;
   background-color: rgba(255, 255, 255, 0.63);
   color: #202a42;
@@ -196,22 +197,70 @@ a {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 350px;
+  flex-direction: column;
+  justify-content: center;
+  height: 320px;
   box-shadow: 0 0 5px 0 #666666cc;
   background-color: #202a42;
+  padding: 50px;
 }
-.footer > div  li{
+.footer h1,
+.footer h2{
+  color: rgb(129, 168, 160);
+}
+.footer > div li {
   list-style: none;
 }
-.footer > div{
-  width: 30%;
-  height: 50%;
+.footer .sec {
+  width: 100%;
   color: rgb(228, 226, 211);
   text-align: center;
 }
+.footer .sec-1 {
+  display: flex;
+  height: 25%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .sec-2 {
+  height: 75%;
+}
+.footer .sec-2 > ul {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 20px;
+  justify-content: space-evenly;
+}
+.footer .sec-2 ul ul {
+  padding: 5px 0 0 20px;
+}
+.footer ul ul li{
+  color: #c5c5c5;
+  margin: 6px auto;
+  text-align: left;
+  list-style: disc;
+}
+.footer input,
+.footer input:hover,
+.footer input:active,
+.footer input:visited,
+.footer button:visited,
+.footer button:active,
+.footer button:hover,
+.footer button {
+  outline: none;
+}
 
+.footer input {
+  padding: 5px 12px;
+  border-radius: 7px;
+}
+.footer button {
+  padding: 5px 12px;
+  border-radius: 5px;
+  box-shadow: inset 0 -10px 5px 0 #0005;
+}
 @media screen and (max-width: 1000px) {
   .nav-bar {
     width: 100%;
@@ -282,10 +331,10 @@ a {
   ul.hide {
     display: none;
   }
-  .footer{
+  .footer {
     flex-direction: column;
   }
-  .footer > div{
+  .footer > div {
     margin: auto;
   }
 }
